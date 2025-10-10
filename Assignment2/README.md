@@ -104,7 +104,7 @@ using namespace oqs;
 
 #### 1. List all supported KEM and SIG algorithms
 ```shell
-gcc list.c -o list -liboqs
+g++ list.cpp -o list -liboqs
 ./list
 ```
 
