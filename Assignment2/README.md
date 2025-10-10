@@ -16,7 +16,7 @@ liboqs is part of the **Open Quantum Safe (OQS)** project, which aims to develop
 
 ## Installation
 
-### Install dependencies:
+### Install dependencies
 
 On Ubuntu:
 
