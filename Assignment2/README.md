@@ -94,31 +94,19 @@ namespace `oqs`. All the liboqs C API is located in the namespace `oqs::C`,
 hence to use directly a C API function you must qualify the call
 with `oqs::C::liboqs_C_function(...)`.
 
-liboqs-cpp defines four main classes: `oqs::KeyEncapsulation`
-and `oqs::Signature`, providing post-quantum key encapsulation and signture
-mechanisms, respectively, and
-`oqs::KEMs` and `oqs::Sigs`, containing only static member functions that
-provide information related to the available key encapsulation mechanisms or
-signature mechanism, respectively.
+If you want to use all functions from the `oqs::C` namespace directly without qualification, you can add a using directive to import the whole `oqs::C` namespace
 
-`oqs::KeyEncapsulation` and/or `oqs::Signature` must be instantiated with a
-string identifying one of mechanisms supported by liboqs; these can be
-enumerated using the `oqs::KEMs::get_enabled_KEM_mechanisms()`
-and `oqs::Sigs::get_enabled_sig_mechanisms()` member functions.
-
-Support for alternative RNGs is provided by the `include/rand/rand.hpp` header
-file, which exports its functions in `namespace oqs::rand`. This header file
-must be explicitly included in order to activate the support for alternative
-RNGs.
-
-The wrapper also defines a high resolution timing class, `oqs::Timer<>`.
-
-The examples in
-the [`examples`](https://github.com/open-quantum-safe/liboqs-cpp/tree/main/examples)
-directory are self-explanatory stand-alone applications and provide more details
-about the wrapper's API and its usage.
+```cpp
+using namespace oqs;
+```
 
 ## Compile and execute a program
+
+#### 1. List all supported KEM and SIG algorithms
+```shell
+gcc list.c -o list -liboqs
+./list
+```
 
 #### 2. Key exchange using a KEM algorithm
 ```shell
