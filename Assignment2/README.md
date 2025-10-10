@@ -94,7 +94,7 @@ namespace `oqs`. All the liboqs C API is located in the namespace `oqs::C`,
 hence to use directly a C API function you must qualify the call
 with `oqs::C::liboqs_C_function(...)`.
 
-If you want to use all functions from the `oqs::C` namespace directly without qualification, you can add a using directive to import the whole `oqs::C` namespace
+If you want to use all functions from the `oqs::C` namespace directly without qualification
 
 ```cpp
 using namespace oqs;
@@ -102,11 +102,19 @@ using namespace oqs;
 
 ## Compile and execute a program
 
+```shell
+git clone https://github.com/MTech-IT-MNS-2025/Group-1.git
+cd Group-1/Assignment2/
+```
+
 #### 1. List all supported KEM and SIG algorithms
 ```shell
 g++ list.cpp -o list -liboqs
 ./list
 ```
+<p align="center">
+  <img src="Screenshots/list.png" alt="PQC algorithms list" width="90%">
+</p>
 
 #### 2. Key exchange using a KEM algorithm
 ```shell
@@ -114,8 +122,16 @@ g++ kem.cpp -o kem -liboqs
 ./kem
 ```
 
+<p align="center">
+  <img src="Screenshots/kem.png" alt="PQC algorithms list" width="90%">
+</p>
+
 #### 3. Digital signature using a SIG algorithm
 ```shell
 g++ sig.cpp -o sig -liboqs
 ./sig
 ```
+
+<p align="center">
+  <img src="Screenshots/sig.png" alt="PQC algorithms list" width="90%">
+</p>
