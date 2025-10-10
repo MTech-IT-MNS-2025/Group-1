@@ -120,8 +120,14 @@ about the wrapper's API and its usage.
 
 ## Compile and execute a program
 
-#### Example, for a program named prog.cpp
+#### 2. Key exchange using a KEM algorithm
 ```shell
-g++ prog.cpp -o prog -liboqs
-./prog
+g++ kem.cpp -o kem -liboqs
+./kem
+```
+
+#### 3. Digital signature using a SIG algorithm
+```shell
+g++ sig.cpp -o sig -liboqs
+./sig
 ```

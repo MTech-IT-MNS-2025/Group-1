@@ -17,7 +17,7 @@ int main() {
 	KeyEncapsulation alice{kem_name}, bob{kem_name};
 
 	// Get KEM algorithm details
-        cout << "KEM details:\n" << alice.get_details();
+    cout << "KEM details:\n" << alice.get_details();
 
 	// Alice generates the key pair (public & secret keys)
 	t.tic();
