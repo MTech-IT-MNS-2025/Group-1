@@ -143,3 +143,7 @@ g++ sig.cpp -o sig -liboqs
 <p align="center">
   <img src="Screenshots/sig.png" alt="SIG algorithm" width="90%">
 </p>
+
+## Contributions
+
+Contribution details of each member is listed in `CONTRIBUTIONS.txt`.
