@@ -12,6 +12,14 @@ liboqs provides:
 
 liboqs is part of the **Open Quantum Safe (OQS)** project, which aims to develop and integrate into applications quantum-safe cryptography to facilitate deployment and testing in real world contexts. In particular, OQS provides prototype integrations of liboqs into protocols like TLS, X.509, and S/MIME, through [OpenSSL 3 Provider](https://github.com/open-quantum-safe/oqs-provider) and provides a variety of other [post-quantum-enabled demos](https://github.com/open-quantum-safe/oqs-demos).
 
+liboqs also provides following wrappers so as to use post-quantum algorithms in other languages:
+
+`C++` [liboqs-cpp](https://github.com/open-quantum-safe/liboqs-cpp)
+`Python` [liboqs-python](https://github.com/open-quantum-safe/liboqs-python)
+`Java` [liboqs-java](https://github.com/open-quantum-safe/liboqs-java)
+`Go` [liboqs-go](https://github.com/open-quantum-safe/liboqs-go)
+`Rust` [liboqs-rust](https://github.com/open-quantum-safe/liboqs-rust)
+
 ---
 
 ## Installation
