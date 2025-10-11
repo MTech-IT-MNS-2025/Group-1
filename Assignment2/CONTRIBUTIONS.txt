@@ -3,8 +3,13 @@ CONTRIBUTIONS
 ----------
 PNS2025001
 ----------
-
-
+Task 1:Getting Started
+-The code is in list.cpp
+-Using OQS_KEM_alg_count(), OQS_KEM_alg_identifier(), OQS_SIG_alg_count(),the program(list.cpp) prints:
+• The algorithm name
+• Public key length
+• Secret key length
+• Ciphertext length (for KEMs)
 
 ----------
 PNS2025002
