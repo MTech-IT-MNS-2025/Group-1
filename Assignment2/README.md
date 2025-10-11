@@ -69,7 +69,7 @@ echo "/usr/local/lib64" | sudo tee /etc/ld.so.conf.d/liboqs.conf
 sudo ldconfig
 ```
 
-### Configure and install the wrapper
+### Configure and install the C++ wrapper
 
 ```shell
 git clone --depth=1 https://github.com/open-quantum-safe/liboqs-cpp
