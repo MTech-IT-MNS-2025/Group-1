@@ -10,6 +10,7 @@ Task 1:Getting Started
 • Public key length
 • Secret key length
 • Ciphertext length (for KEMs)
+• Signature length (for SIGs)
 
 ----------
 PNS2025002
