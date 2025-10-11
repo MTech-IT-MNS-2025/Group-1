@@ -131,7 +131,7 @@ g++ kem.cpp -o kem -liboqs
 ```
 
 <p align="center">
-  <img src="Screenshots/kem.png" alt="PQC algorithms list" width="90%">
+  <img src="Screenshots/kem.png" alt="KEM algorithm" width="90%">
 </p>
 
 #### 3. Digital signature using a SIG algorithm
@@ -141,5 +141,5 @@ g++ sig.cpp -o sig -liboqs
 ```
 
 <p align="center">
-  <img src="Screenshots/sig.png" alt="PQC algorithms list" width="90%">
+  <img src="Screenshots/sig.png" alt="SIG algorithm" width="90%">
 </p>
