@@ -117,7 +117,7 @@ cd Group-1/Assignment2/
 
 #### 1. List all supported KEM and SIG algorithms
 ```shell
-g++ list.cpp -o list -liboqs
+g++ list.cpp -o list -loqs
 ./list
 ```
 <p align="center">
@@ -126,7 +126,7 @@ g++ list.cpp -o list -liboqs
 
 #### 2. Key exchange using a KEM algorithm
 ```shell
-g++ kem.cpp -o kem -liboqs
+g++ kem.cpp -o kem -loqs
 ./kem
 ```
 
@@ -136,7 +136,7 @@ g++ kem.cpp -o kem -liboqs
 
 #### 3. Digital signature using a SIG algorithm
 ```shell
-g++ sig.cpp -o sig -liboqs
+g++ sig.cpp -o sig -loqs
 ./sig
 ```
 
