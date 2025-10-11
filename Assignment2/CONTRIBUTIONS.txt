@@ -1,0 +1,41 @@
+CONTRIBUTIONS
+
+----------
+PNS2025001
+----------
+
+
+
+----------
+PNS2025002
+----------
+
+Task 2: Key Encapsulation (KEM)
+- The code is in kem.cpp
+- Implemented the Key Encapsulation Mechanism (KEM) demo using the ML-KEM-512 algorithm.
+  - Alice generates a key pair.
+  - Bob uses Alice's public key to encapsulate a shared secret.
+  - Alice decapsulates the ciphertext and recovers the same shared secret.
+  - Both Alice’s and Bob’s shared secrets are displayed and compared for equality.
+- Measured key generation time, encapsulation time, and decapsulation time, printing results to the console.
+
+Task 3: Digital Signatures (SIG)
+- The code is in sig.cpp
+- Implemented the Digital Signature demo using the ML-DSA-44 signature algorithm.
+  - Alice generates a key pair (public & secret keys).
+  - Alice signs a message and Bob verifies the signature.
+  - The program prints the signature and checks whether it is valid according to Bob.
+- Measured and printed signature generation time.
+
+Added README.md file
+- Documented the steps to install dependencies, configure, build, and install liboqs and liboqs-cpp.
+- Explained how to use liboqs-cpp in standalone applications, how to avoid namespace pollution.
+- Provided installation instructions for Ubuntu and Fedora systems.
+- Provided compilation and execution steps of the programs along with the screenshots.
+
+----------
+PNS2025003
+----------
+
+
+
