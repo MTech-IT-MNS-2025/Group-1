@@ -94,7 +94,7 @@ namespace `oqs`. All the liboqs C API is located in the namespace `oqs::C`,
 hence to use directly a C API function you must qualify the call
 with `oqs::C::liboqs_C_function(...)`.
 
-If you want to use all functions from the `oqs::C` namespace directly without qualification
+If you want to use all functions from the `oqs::C` namespace directly without qualification, you need to use
 
 ```cpp
 using namespace oqs;
