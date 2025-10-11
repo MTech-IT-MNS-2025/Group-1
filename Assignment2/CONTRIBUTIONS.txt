@@ -37,5 +37,14 @@ Added README.md file
 PNS2025003
 ----------
 
+-Conducted a comparative study between CLASSICAL and POST QUANTUM CRYPTOGRAPHIC ALGORITHMS.
+-Measured and analyzed KEY_SIZES, SIGNATURE/CIPHERTEXT_SIZES, and EXECUTION_TIMES using cryptographic libraries.
+-Identified trade-offs between PERFORMANCE, KEY_SIZES and QUANTUM RESISTANCE. 
+-Concluded that ML-KEM is the most practical POQ algorithm for real-world deployment, with ML-DSA suitable for Digital Signatures.
+-Highlighted the importance of hybrid cryptographic systems for a smooth transition quantum-secure environment.
+-Documented observations results and analysis in a detailed report comparing SECURITY, PERFORMANCE, and IMPLEMENTATION.
+-It is in COMPARISION folder.
+
+
 
 
