@@ -14,11 +14,11 @@ liboqs is part of the **Open Quantum Safe (OQS)** project, which aims to develop
 
 liboqs also provides following wrappers so as to use post-quantum algorithms in other languages:
 
-`C++` [liboqs-cpp](https://github.com/open-quantum-safe/liboqs-cpp)
-`Python` [liboqs-python](https://github.com/open-quantum-safe/liboqs-python)
-`Java` [liboqs-java](https://github.com/open-quantum-safe/liboqs-java)
-`Go` [liboqs-go](https://github.com/open-quantum-safe/liboqs-go)
-`Rust` [liboqs-rust](https://github.com/open-quantum-safe/liboqs-rust)
+`C++` [liboqs-cpp](https://github.com/open-quantum-safe/liboqs-cpp) 
+`Python` [liboqs-python](https://github.com/open-quantum-safe/liboqs-python) 
+`Java` [liboqs-java](https://github.com/open-quantum-safe/liboqs-java) 
+`Go` [liboqs-go](https://github.com/open-quantum-safe/liboqs-go) 
+`Rust` [liboqs-rust](https://github.com/open-quantum-safe/liboqs-rust) 
 
 ---
 
