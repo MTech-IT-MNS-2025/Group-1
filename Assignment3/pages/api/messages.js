@@ -24,7 +24,9 @@ export default async function handler(req, res) {
     }).sort({ timestamp: 1 }); // Sort by oldest first
 
     res.status(200).json(messages);
-  } catch (error) {
+  }
+    // Mention errors
+    catch (error) {
     console.error('Error fetching messages:', error);
     res.status(500).json({ message: 'Internal server error' });
   }
