@@ -76,6 +76,11 @@ sudo systemctl status mongod
 ## Run the Application
 
 ```shell
+git clone https://github.com/MTech-IT-MNS-2025/Group-1/tree/main/Assignment3
+```
+
+```shell
+cd Assignment3
 npm install
 npm run dev
 ```
