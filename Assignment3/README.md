@@ -63,6 +63,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://pgp.mongodb.com/server-8.0.asc
 ...
+sudo dnf update
 sudo yum install mongodb-org
 ```
 
