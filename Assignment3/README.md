@@ -92,6 +92,34 @@ npm run dev
 3. **Socket Communication**: The server listens for user connections, registers them by username, and handles private message routing to the appropriate user.
 4. **Database Interaction**: **MongoDB** stores messages with the sender, receiver, and timestamp, ensuring chat history is retained and available.
 
+```shell
+messaging-app
+|
+|   .env.local #Environment variables file — stores configuration for database URL
+|   package.json #Defines project metadata, dependencies, and scripts for the app
+|   server.js #Main server entry point — initializes Next.js server and sets up WebSocket or API routes
+|               
++---lib
+|       mongodb.js #Handles MongoDB connection logic and exports the database client for use across the app
+|       
++---models
+|       Message.js #Defines the Mongoose schema/model for chat messages
+|       
++---pages
+|   |   chat.js #Frontend page for the chat interface
+|   |   index.js #Login page
+|   |   _app.js #Custom Next.js App component
+|   |   
+|   \---api
+|           messages.js #API route for handling message-related requests
+|           socket.js #API route for setting up WebSocket or Socket.io connections for real-time chat updates
+|           
++---styles
+        Chat.module.css #Styles for the chat page
+        globals.css #Styles applied across the entire app
+        Login.module.css #Styles for the login or landing page
+```
+
 ### Technologies Used
 - **Frontend & Backend**: 
   - **Next.js**: Full-stack JavaScript framework for React.
