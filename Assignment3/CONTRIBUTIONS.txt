@@ -25,3 +25,14 @@ PNS2025002
 - Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
 - Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
 
+----------
+PNS2025003
+----------
+- Managing critical configuration and server files necessary for the application's setup and functionality.
+- Implemented the custom Node.js server with Socket.io integration to handle real-time messaging and connection management in server.js.
+- Created the entry point for the frontend application, handling user login and initial UI rendering through index.js.
+- Managed project dependencies and scripts to ensure consistent environment setup across development machines via package.json and package-lock.json.
+- Configured Next.js framework settings to optimize build and runtime behavior.
+
+
+
