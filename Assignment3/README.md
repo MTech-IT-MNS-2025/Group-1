@@ -70,6 +70,7 @@ sudo yum install mongodb-org
 Start MongoDB and check status:
 
 ```shell
+sudo systemctl enable mongod
 sudo systemctl start mongod
 sudo systemctl status mongod
 ```
