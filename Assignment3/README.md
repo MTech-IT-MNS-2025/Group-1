@@ -76,7 +76,7 @@ sudo systemctl status mongod
 ## Run the Application
 
 ```shell
-git clone https://github.com/MTech-IT-MNS-2025/Group-1/tree/main/Assignment3
+git clone https://github.com/MTech-IT-MNS-2025/Group-1.git
 ```
 
 ```shell
@@ -85,6 +85,22 @@ npm install
 npm run dev
 #Open in browser: http://localhost:3000
 ```
+
+<p align="center">
+  <img src="Screenshots/login.png" alt="Login Interface" width="90%">
+</p>
+
+<p align="center">
+  <img src="Screenshots/chat1.png" alt="Receive Chat Interface" width="90%">
+</p>
+
+<p align="center">
+  <img src="Screenshots/chat2.png" alt="Send Chat Interface" width="90%">
+</p>
+
+<p align="center">
+  <img src="Screenshots/db_test.png" alt="MongoDB Compass test" width="90%">
+</p>
 
 ### Architecture
 1. **Frontend**: Built with **Next.js**, using pages for routing and API routes for server-side operations. The chat page interacts with Socket.io for real-time message delivery and fetches chat history from the server.
