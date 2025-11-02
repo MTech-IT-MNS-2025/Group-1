@@ -5,23 +5,15 @@ CONTRIBUTIONS
 PNS2025001
 ----------
 
-In this assignment, I contributed to developing the following parts of the project:
+- Implemented the styles/ folder:
+ - Chat.module.css — handled chat UI styling and layout.
+ - Login.module.css — designed and styled the login interface.
+ - globals.css — managed global styling, font, and color consistency.
 
-*Implemented the styles/ folder, including:
-
--Chat.module.css — handled chat UI styling and layout.
-
--Login.module.css — designed and styled the login interface.
-
--globals.css — managed global styling, font, and color consistency.
-
-*Worked on the pages/ folder, including:
-
--Created and modified pages related to chat and socket functionality.
-
--Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
-
--Ensured proper structure and modularity within the pages directory.
+- Worked on the pages/ folder, including:
+ - Created and modified pages related to chat and socket functionality.
+ - Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
+ - Ensured proper structure and modularity within the pages directory.
 
 ----------
 PNS2025002
@@ -32,3 +24,4 @@ PNS2025002
 - Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
 - Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
 - Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
+
