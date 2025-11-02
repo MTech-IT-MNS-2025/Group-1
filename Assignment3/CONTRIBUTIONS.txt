@@ -22,3 +22,13 @@ In this assignment, I contributed to developing the following parts of the proje
 -Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
 
 -Ensured proper structure and modularity within the pages directory.
+
+----------
+PNS2025002
+----------
+- Built the MongoDB connection logic in 'lib/mongodb.js', ensuring stable database connections and error handling.
+- Defined the Mongoose model in 'models/Message.js' for chat message structure, including fields for sender, text, and timestamps.
+- Developed the 'pages/api/messages.js' route to handle message CRUD operations (fetching, posting, and deleting messages).
+- Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
+- Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
+- Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
