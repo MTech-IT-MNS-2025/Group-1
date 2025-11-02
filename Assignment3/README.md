@@ -83,6 +83,7 @@ git clone https://github.com/MTech-IT-MNS-2025/Group-1/tree/main/Assignment3
 cd Assignment3
 npm install
 npm run dev
+#Open in browser: http://localhost:3000
 ```
 
 ### Architecture
