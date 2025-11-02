@@ -150,7 +150,7 @@ messaging-app
   - **CSS Modules** or **Tailwind CSS** for designing the user interface.
 
 ## Learning Outcomes
-1. Build full-stack applications using Next.js with pages, API routes, and backend logic.
+1. Built full-stack applications using Next.js with pages, API routes, and backend logic.
 2. Implement one-to-one real-time messaging using WebSocket (Socket.io).
 3. Store messages in a database (MongoDB) to maintain chat history.
 4. Display previous messages when a user logs in or opens a chat.
