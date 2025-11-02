@@ -4,12 +4,10 @@ CONTRIBUTIONS
 ----------
 PNS2025001
 ----------
-
 - Implemented the styles/ folder:
  - Chat.module.css — handled chat UI styling and layout.
  - Login.module.css — designed and styled the login interface.
  - globals.css — managed global styling, font, and color consistency.
-
 - Worked on the pages/ folder, including:
  - Created and modified pages related to chat and socket functionality.
  - Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
