@@ -1,0 +1,24 @@
+
+CONTRIBUTIONS
+
+----------
+PNS2025001
+----------
+
+In this assignment, I contributed to developing the following parts of the project:
+
+*Implemented the styles/ folder, including:
+
+-Chat.module.css — handled chat UI styling and layout.
+
+-Login.module.css — designed and styled the login interface.
+
+-globals.css — managed global styling, font, and color consistency.
+
+*Worked on the pages/ folder, including:
+
+-Created and modified pages related to chat and socket functionality.
+
+-Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
+
+-Ensured proper structure and modularity within the pages directory.
