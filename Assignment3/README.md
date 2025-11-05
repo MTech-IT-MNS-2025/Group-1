@@ -17,21 +17,21 @@ This assignment implements a real-time, one-to-one private messaging application
 
 ## Installation
 
-### Install Node.js
+### Install Node.js and npm
 
 On Ubuntu:
 
 ```shell
-sudo apt install nodejs
+sudo apt install nodejs npm
 ```
 
 On Fedora:
 
 ```shell
-sudo dnf install nodejs
+sudo dnf install nodejs npm
 ```
 
-Alternatively, using nvm
+Alternatively node.js can be installed using nvm
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
@@ -73,6 +73,14 @@ Start MongoDB and check status:
 sudo systemctl enable mongod
 sudo systemctl start mongod
 sudo systemctl status mongod
+```
+
+### Install MongoDB Compass
+
+Download and Install MongoDB Compass from 
+
+```shell
+https://www.mongodb.com/try/download/compass
 ```
 
 ## Run the Application
