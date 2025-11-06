@@ -10,7 +10,7 @@
 
 ## Installation
 
-### Install dependencies
+### Install emsdk
 
 ```shell
 # Get the emsdk repo
