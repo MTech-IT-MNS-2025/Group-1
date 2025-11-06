@@ -10,6 +10,16 @@
 
 ## Installation
 
+### Install git
+
+```shell
+# On Ubuntu
+sudo apt install git
+
+# On Fedora
+sudo dnf install git
+```
+
 ### Install emsdk
 
 ```shell
