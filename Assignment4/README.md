@@ -43,21 +43,14 @@ emcc rc4.c -o rc4.js
 
 ### Install Node.js and npm
 
-On Ubuntu:
-
 ```shell
+# On Ubuntu
 sudo apt install nodejs npm
-```
 
-On Fedora:
-
-```shell
+# On Fedora
 sudo dnf install nodejs npm
-```
 
-Alternatively node.js can be installed using nvm
-
-```shell
+# Alternatively node.js can be installed using nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 22
