@@ -1,4 +1,4 @@
-# Compile RC4.c code to WebAssembly and execute in browser using JavaScript
+# Compile C code to WebAssembly and execute in browser using JavaScript
 
 ---
 
