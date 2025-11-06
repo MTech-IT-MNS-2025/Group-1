@@ -112,7 +112,7 @@ npm run dev
   <img src="Screenshots/db_test.png" alt="MongoDB Compass test" width="90%">
 </p>
 
-### Architecture
+## Architecture
 1. **Frontend**: Built with **Next.js**, using pages for routing and API routes for server-side operations. The chat page interacts with Socket.io for real-time message delivery and fetches chat history from the server.
 2. **Backend**: A simple **Node.js** server using **Socket.io** to manage user connections, message routing, and real-time communication. Messages are stored and retrieved from **MongoDB**.
 3. **Socket Communication**: The server listens for user connections, registers them by username, and handles private message routing to the appropriate user.
@@ -146,7 +146,7 @@ messaging-app
         Login.module.css #Styles for the login or landing page
 ```
 
-### Technologies Used
+## Technologies Used
 - **Frontend & Backend**: 
   - **Next.js**: Full-stack JavaScript framework for React.
   - **Node.js**: Backend runtime to handle API routes and real-time messaging logic.
