@@ -26,11 +26,14 @@ PNS2025002
 ----------
 PNS2025003
 ----------
-- Managing critical configuration and server files necessary for the application's setup and functionality.
-- Implemented the custom Node.js server with Socket.io integration to handle real-time messaging and connection management in server.js.
-- Created the entry point for the frontend application, handling user login and initial UI rendering through index.js.
-- Managed project dependencies and scripts to ensure consistent environment setup across development machines via package.json and package-lock.json.
-- Configured Next.js framework settings to optimize build and runtime behavior.
+- Developed and structured the custom Node.js backend server using Express.js and Socket.io, enabling real-time messaging and user connection management.
+- Implemented user authentication and session handling in server.js using express-session, connect-mongo, and bcrypt for secure login and communication..
+- Integrated Socket.io to manage private chat functionality, online user tracking, and instant message delivery between clients.
+- Configured middleware including cors, body-parser, and session storage to ensure smooth API communication between the frontend and backend.
+- Created and managed REST API endpoints for user login, registration, logout, session verification, and chat message retrieval.
+- Handled project dependency management and scripts through package.json to maintain consistent development and runtime environments.
+- Ensured modular and maintainable backend structure by separating concerns, optimizing the server.js file for performance, and aligning with best coding practices.
+
 
 
 
