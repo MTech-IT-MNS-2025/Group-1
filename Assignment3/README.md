@@ -119,7 +119,6 @@ Open frontend in browser
 ```shell
 ├───backend
 │       db.js
-│       package.json
 │       server.js
 │
 ├───frontend
