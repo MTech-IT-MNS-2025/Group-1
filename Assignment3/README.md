@@ -122,10 +122,6 @@ Open frontend in browser
 │       server.js
 │
 ├───frontend
-    │
-    ├───public
-    │       index.html
-    │
     └───src
             App.css
             App.js
