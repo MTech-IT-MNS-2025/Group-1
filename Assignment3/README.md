@@ -117,7 +117,21 @@ Open frontend in browser
 ## Architecture
 
 ```shell
-
+├───backend
+│       db.js
+│       package.json
+│       server.js
+│
+├───frontend
+│   │
+│   ├───public
+│   │       index.html
+│   │
+│   └───src
+│           App.css
+│           App.js
+│           index.css
+│           index.js
 ```
 
 ## Technologies Used
