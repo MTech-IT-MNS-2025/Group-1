@@ -103,19 +103,15 @@ npm start
 Open frontend in browser
 
 <p align="center">
-  <img src="Screenshots/register.png" alt="Register" width="90%">
+  <img src="Screenshots/login.jpg" alt="Login" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/login.png" alt="Login" width="90%">
+  <img src="Screenshots/chat.jpg" alt="Chat" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat.png" alt="Chat" width="90%">
-</p>
-
-<p align="center">
-  <img src="Screenshots/db_test.png" alt="MongoDB Compass test" width="90%">
+  <img src="Screenshots/db_test.jpg" alt="MongoDB Compass test" width="90%">
 </p>
 
 ## Architecture
