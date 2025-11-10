@@ -89,23 +89,29 @@ https://www.mongodb.com/try/download/compass
 git clone https://github.com/MTech-IT-MNS-2025/Group-1.git
 ```
 
+in Assignment3 folder
+
 ```shell
-cd Assignment3
-npm install
-npm run dev
-#Open in browser: http://localhost:3000
+cd backend
+node server.js
 ```
 
+```shell
+cd frontend
+npm start
+```
+Open frontend in browser
+
 <p align="center">
-  <img src="Screenshots/login.png" alt="Login Interface" width="90%">
+  <img src="Screenshots/register.png" alt="Register" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat1.png" alt="Receive Chat Interface" width="90%">
+  <img src="Screenshots/login.png" alt="Login" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat2.png" alt="Send Chat Interface" width="90%">
+  <img src="Screenshots/chat.png" alt="Chat" width="90%">
 </p>
 
 <p align="center">
@@ -113,42 +119,14 @@ npm run dev
 </p>
 
 ## Architecture
-1. **Frontend**: Built with **Next.js**, using pages for routing and API routes for server-side operations. The chat page interacts with Socket.io for real-time message delivery and fetches chat history from the server.
-2. **Backend**: A simple **Node.js** server using **Socket.io** to manage user connections, message routing, and real-time communication. Messages are stored and retrieved from **MongoDB**.
-3. **Socket Communication**: The server listens for user connections, registers them by username, and handles private message routing to the appropriate user.
-4. **Database Interaction**: **MongoDB** stores messages with the sender, receiver, and timestamp, ensuring chat history is retained and available.
 
 ```shell
-messaging-app
-|
-|   .env.local #Environment variables file — stores configuration for database URL
-|   package.json #Defines project metadata, dependencies, and scripts for the app
-|   server.js #Main server entry point — initializes Next.js server and sets up WebSocket or API routes
-|               
-+---lib
-|       mongodb.js #Handles MongoDB connection logic and exports the database client for use across the app
-|       
-+---models
-|       Message.js #Defines the Mongoose schema/model for chat messages
-|       
-+---pages
-|   |   chat.js #Frontend page for the chat interface
-|   |   index.js #Login page
-|   |   _app.js #Custom Next.js App component
-|   |   
-|   \---api
-|           messages.js #API route for handling message-related requests
-|           socket.js #API route for setting up WebSocket or Socket.io connections for real-time chat updates
-|           
-+---styles
-        Chat.module.css #Styles for the chat page
-        globals.css #Styles applied across the entire app
-        Login.module.css #Styles for the login or landing page
+
 ```
 
 ## Technologies Used
 - **Frontend & Backend**: 
-  - **Next.js**: Full-stack JavaScript framework for React.
+  - **React**: Library for web and native user interfaces.
   - **Node.js**: Backend runtime to handle API routes and real-time messaging logic.
 - **Real-Time Communication**:
   - **Socket.io**: WebSocket library for real-time, bidirectional communication.
@@ -158,8 +136,8 @@ messaging-app
   - **CSS Modules** or **Tailwind CSS** for designing the user interface.
 
 ## Learning Outcomes
-1. Built full-stack applications using Next.js with pages, API routes, and backend logic.
-2. Implement one-to-one real-time messaging using WebSocket (Socket.io).
+1. Built full-stack applications using React.
+2. Implement one-to-one real-time messaging.
 3. Store messages in a database (MongoDB) to maintain chat history.
 4. Display previous messages when a user logs in or opens a chat.
 5. Understand user session management and message routing for private communication.
