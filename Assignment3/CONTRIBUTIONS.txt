@@ -4,14 +4,14 @@ CONTRIBUTIONS
 ----------
 PNS2025001
 ----------
-- Implemented the styles/ folder:
- - Chat.module.css — handled chat UI styling and layout.
- - Login.module.css — designed and styled the login interface.
- - globals.css — managed global styling, font, and color consistency.
-- Worked on the pages/ folder, including:
- - Created and modified pages related to chat and socket functionality.
- - Implemented logic in files such as _app.js, chat.js, and socket.js to integrate frontend and backend communication.
- - Ensured proper structure and modularity within the pages directory.
+I contributed to the setup, structure, and configuration of the frontend chat application.  
+My contributions include:
+- Creating component structure and organizing the src folder.  
+- Writing the main UI logic in App.js and index.js  
+- Designing frontend styles using App.css and index.css.  
+- Configuring the project environment through package.json.  
+- Ensuring clean version control using .gitignore.
+
 
 ----------
 PNS2025002
@@ -33,6 +33,7 @@ PNS2025003
 - Created and managed REST API endpoints for user login, registration, logout, session verification, and chat message retrieval.
 - Handled project dependency management and scripts through package.json to maintain consistent development and runtime environments.
 - Ensured modular and maintainable backend structure by separating concerns, optimizing the server.js file for performance, and aligning with best coding practices.
+
 
 
 
