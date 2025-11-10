@@ -123,15 +123,15 @@ Open frontend in browser
 │       server.js
 │
 ├───frontend
-│   │
-│   ├───public
-│   │       index.html
-│   │
-│   └───src
-│           App.css
-│           App.js
-│           index.css
-│           index.js
+    │
+    ├───public
+    │       index.html
+    │
+    └───src
+            App.css
+            App.js
+            index.css
+            index.js
 ```
 
 ## Technologies Used
