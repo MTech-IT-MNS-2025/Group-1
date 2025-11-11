@@ -116,16 +116,7 @@ Open frontend in browser
 ## Architecture
 
 ```shell
-├───backend
-│       db.js
-│       server.js
-│
-├───frontend
-    └───src
-            App.css
-            App.js
-            index.css
-            index.js
+
 ```
 
 ## Technologies Used
