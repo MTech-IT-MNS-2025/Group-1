@@ -89,21 +89,16 @@ https://www.mongodb.com/try/download/compass
 git clone https://github.com/MTech-IT-MNS-2025/Group-1.git
 ```
 
-in Assignment3 folder
+in Assignment3.1 folder
 
 ```shell
-cd backend
-node server.js
+npm run dev
 ```
 
-```shell
-cd frontend
-npm start
-```
 Open frontend in browser
 
 <p align="center">
-  <img src="Screenshots/login.jpg" alt="Login" width="90%">
+  <img src="Screenshots/register.jpg" alt="Register" width="90%">
 </p>
 
 <p align="center">
@@ -111,7 +106,11 @@ Open frontend in browser
 </p>
 
 <p align="center">
-  <img src="Screenshots/db_test.jpg" alt="MongoDB Compass test" width="90%">
+  <img src="Screenshots/db_messages.jpg" alt="db_messages" width="90%">
+</p>
+
+<p align="center">
+  <img src="Screenshots/db_users.jpg" alt="db_users" width="90%">
 </p>
 
 ## Architecture
