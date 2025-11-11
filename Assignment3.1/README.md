@@ -117,7 +117,6 @@ Open frontend in browser
 
 ```shell
 chat-app
-│   package.json
 │   server.js
 │
 ├───lib
