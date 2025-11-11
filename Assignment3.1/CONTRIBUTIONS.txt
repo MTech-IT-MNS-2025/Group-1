@@ -1,0 +1,38 @@
+
+CONTRIBUTIONS
+
+----------
+PNS2025001
+----------
+I contributed to the setup, structure, and configuration of the frontend chat application.  
+My contributions include:
+- Creating component structure and organizing the src folder.  
+- Writing the main UI logic in App.js and index.js  
+- Designing frontend styles using App.css and index.css.  
+- Configuring the project environment through package.json.  
+- Ensuring clean version control using .gitignore.
+
+
+----------
+PNS2025002
+----------
+- Implemented db.js, code for MongoDB integration.
+- Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
+- Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
+- Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
+
+----------
+PNS2025003
+----------
+- Developed and structured the custom Node.js backend server using Express.js and Socket.io, enabling real-time messaging and user connection management.
+- Implemented user authentication and session handling in server.js using express-session, connect-mongo, and bcrypt for secure login and communication..
+- Integrated Socket.io to manage private chat functionality, online user tracking, and instant message delivery between clients.
+- Configured middleware including cors, body-parser, and session storage to ensure smooth API communication between the frontend and backend.
+- Created and managed REST API endpoints for user login, registration, logout, session verification, and chat message retrieval.
+- Handled project dependency management and scripts through package.json to maintain consistent development and runtime environments.
+- Ensured modular and maintainable backend structure by separating concerns, optimizing the server.js file for performance, and aligning with best coding practices.
+
+
+
+
+
