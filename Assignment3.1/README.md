@@ -140,7 +140,7 @@ Open frontend in browser
   - **CSS Modules** or **Tailwind CSS** for designing the user interface.
 
 ## Learning Outcomes
-1. Built full-stack applications using React.
+1. Built full-stack applications using Next.js.
 2. Implement one-to-one real-time messaging.
 3. Store messages in a database (MongoDB) to maintain chat history.
 4. Display previous messages when a user logs in or opens a chat.
