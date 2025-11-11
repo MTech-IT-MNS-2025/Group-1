@@ -130,7 +130,7 @@ Open frontend in browser
 
 ## Technologies Used
 - **Frontend & Backend**: 
-  - **React**: Library for web and native user interfaces.
+  - **Next.js**: Open-source React-based web development framework.
   - **Node.js**: Backend runtime to handle API routes and real-time messaging logic.
 - **Real-Time Communication**:
   - **Socket.io**: WebSocket library for real-time, bidirectional communication.
