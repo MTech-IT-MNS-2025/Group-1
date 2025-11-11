@@ -98,19 +98,19 @@ npm run dev
 Open frontend in browser
 
 <p align="center">
-  <img src="Screenshots/register.jpg" alt="Register" width="90%">
+  <img src="Screenshots/register.png" alt="Register" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat.jpg" alt="Chat" width="90%">
+  <img src="Screenshots/chat.png" alt="Chat" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/db_messages.jpg" alt="db_messages" width="90%">
+  <img src="Screenshots/db_messages.png" alt="db_messages" width="90%">
 </p>
 
 <p align="center">
-  <img src="Screenshots/db_users.jpg" alt="db_users" width="90%">
+  <img src="Screenshots/db_users.png" alt="db_users" width="90%">
 </p>
 
 ## Architecture
