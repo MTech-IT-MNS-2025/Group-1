@@ -16,7 +16,7 @@ My contributions include:
 ----------
 PNS2025002
 ----------
-- Implemented db.js, code for MongoDB integration.
+- Implemented models, lib/mongodb.js, apis for register, login and messages for MongoDB integration.
 - Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
 - Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
 - Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.

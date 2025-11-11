@@ -116,7 +116,33 @@ Open frontend in browser
 ## Architecture
 
 ```shell
-
+chat-app
+│   package.json
+│   server.js
+│
+├───lib
+│       mongodb.js
+│
+├───models
+│       Message.js
+│       User.js
+│
+├───pages
+│   │   chat.js
+│   │   index.js
+│   │   register.js
+│   │   _app.js
+│   │
+│   └───api
+│           login.js
+│           messages.js
+│           register.js
+│           socket.js
+│
+└───styles
+        Chat.module.css
+        globals.css
+        Login.module.css
 ```
 
 ## Technologies Used
