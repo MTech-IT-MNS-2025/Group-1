@@ -6,11 +6,11 @@ PNS2025001
 ----------
 I contributed to the setup, structure, and configuration of the frontend chat application.  
 My contributions include:
-- Creating component structure and organizing the src folder.  
-- Writing the main UI logic in App.js and index.js  
-- Designing frontend styles using App.css and index.css.  
-- Configuring the project environment through package.json.  
-- Ensuring clean version control using .gitignore.
+-_app.js – main app configuration
+-chat.js – chat UI and logic
+-index.js – main landing/login page
+-register.js – user registration page
+-Added socket.js file in pages/api/ directory for creating and handling socket connections.
 
 
 ----------
