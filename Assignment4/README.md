@@ -79,6 +79,17 @@ npm run dev
 
 ## Architecture
 
+```shell
+Assignment4
+│
+├───app
+│       page.js
+│
+├───public
+        rc4.c
+        rc4.js
+        rc4.wasm
+```
 
 ## Technologies Used
 
