@@ -4,7 +4,7 @@
 
 ## Overview
 
-
+This project demonstrates how native `C` code can be compiled into `WebAssembly` and executed inside a modern web application. A simple RC4 encryption and decryption system is implemented, where the core algorithm is written in C and compiled using `Emscripten`. The resulting WebAssembly module is loaded in a `Next.js` frontend, which provides a minimal interface for entering text, supplying a key, and performing encryption or decryption directly in the browser. The assignment highlights how browser-based applications can integrate low-level native code for efficient computation while maintaining a straightforward JavaScript-driven user interface.
 
 ---
 
@@ -80,16 +80,15 @@ npm run dev
 
 Open frontend in browser
 
-<div style="display: flex; justify-content: center; gap: 30px; text-align: center;">
-  <figure>
-    <img src="Screenshots/rc4_enc.png" alt="RC4 Encryption" width="300">
-  </figure>
+`Encryption`
+<p align="center">
+  <img src="Screenshots/rc4_enc.png" alt="RC4 Encryption" width="40%">
+</p>
 
-  <figure>
-    <img src="Screenshots/rc4_dec.png" alt="RC4 Decryption" width="300">
-  </figure>
-</div>
-
+`Decryption`
+<p align="center">
+  <img src="Screenshots/rc4_dec.png" alt="RC4 Decryption" width="40%">
+</p>
 
 ## Architecture
 
