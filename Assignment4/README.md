@@ -91,9 +91,6 @@ Open frontend in browser
 </div>
 
 
-
-
-
 ## Architecture
 
 ```shell
@@ -109,7 +106,11 @@ Assignment4
 ```
 
 ## Technologies Used
-
+- **C**: Implements the core RC4 algorithm.
+- **Emscripten**: Compiles C code into WebAssembly.
+- **WebAssembly (WASM)**: Runs C code efficiently in browser.
+- **Next.js**: Provides the React-based web interface.
+- **JavaScript / React**: Connects UI to WASM functions.
 
 ## Learning Outcomes
 1. How to compile C code to WebAssembly using Emscripten.
