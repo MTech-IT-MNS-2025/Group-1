@@ -81,12 +81,12 @@ npm run dev
 Open frontend in browser
 
 `Encryption`
-<p align="center">
+<p>
   <img src="Screenshots/rc4_enc.png" alt="RC4 Encryption" width="40%">
 </p>
 
 `Decryption`
-<p align="center">
+<p>
   <img src="Screenshots/rc4_dec.png" alt="RC4 Decryption" width="40%">
 </p>
 
