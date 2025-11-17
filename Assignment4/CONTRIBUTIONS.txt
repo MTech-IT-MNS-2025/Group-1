@@ -1,0 +1,10 @@
+----------
+PNS2025003
+----------
+- Developed the client-side UI in page.js for performing RC4 encryption and decryption.
+- Implemented React state management for handling text input, key input, and displaying output results.
+- Integrated WebAssembly support on the frontend by dynamically loading the Emscripten-generated rc4.js script.
+- Configured the Module object inside useEffect to initialize the WASM runtime and expose encryption functions.
+- Created JavaScript wrappers for C functions (rc4_encrypt, rc4_decrypt) using Module.cwrap and connected them to UI buttons.
+- Added fallback handling to display “WASM not ready” when encryption functions are not yet initialized.
+- Built an interactive, clean UI for encrypt/decrypt operations using simple input fields and action buttons
