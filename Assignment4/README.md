@@ -71,6 +71,8 @@ nvm install 22
 
 ### Running the app
 
+In Assignment4 folder,
+
 ```shell
 npm install
 npm run dev
