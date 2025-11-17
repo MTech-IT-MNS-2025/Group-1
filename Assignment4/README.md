@@ -78,13 +78,11 @@ npm run dev
 
 Open frontend in browser
 
-<p align="center">
+<div style="display: flex; justify-content: center; gap: 20px;">
   <img src="Screenshots/rc4_enc.png" alt="RC4 Encryption" width="40%">
-</p>
-
-<p align="center">
   <img src="Screenshots/rc4_dec.png" alt="RC4 Decryption" width="40%">
-</p>
+</div>
+
 
 
 ## Architecture
