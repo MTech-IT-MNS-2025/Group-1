@@ -83,12 +83,10 @@ Open frontend in browser
 <div style="display: flex; justify-content: center; gap: 30px; text-align: center;">
   <figure>
     <img src="Screenshots/rc4_enc.png" alt="RC4 Encryption" width="300">
-    <figcaption><strong>RC4 Encryption</strong></figcaption>
   </figure>
 
   <figure>
     <img src="Screenshots/rc4_dec.png" alt="RC4 Decryption" width="300">
-    <figcaption><strong>RC4 Decryption</strong></figcaption>
   </figure>
 </div>
 
