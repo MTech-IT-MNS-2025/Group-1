@@ -1,4 +1,16 @@
 ----------
+PNS2025001
+----------
+Added rc4.c file that implements RC4 encryption and decryption in C using Emscripten.
+The file includes:
+- Full RC4 core logic (KSA + PRGA)
+- rc4_encrypt() function for converting plaintext to HEX ciphertext
+- rc4_decrypt() function for converting HEX ciphertext back to plaintext
+- to_hex() helper for formatting output
+- hexval() helper for parsing hex input
+
+
+----------
 PNS2025003
 ----------
 - Developed the client-side UI in page.js for performing RC4 encryption and decryption.
@@ -8,3 +20,4 @@ PNS2025003
 - Created JavaScript wrappers for C functions (rc4_encrypt, rc4_decrypt) using Module.cwrap and connected them to UI buttons.
 - Added fallback handling to display “WASM not ready” when encryption functions are not yet initialized.
 - Built an interactive, clean UI for encrypt/decrypt operations using simple input fields and action buttons
+
