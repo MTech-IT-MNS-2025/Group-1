@@ -9,6 +9,25 @@ The file includes:
 - to_hex() helper for formatting output
 - hexval() helper for parsing hex input
 
+----------
+PNS2025002
+----------
+- handled the WASM compilation pipeline, including:
+ - Writing the correct emcc command.
+ - Exporting only necessary symbols.
+ - Minimizing WASM size using:
+   -Oz for size optimization
+   --closure 1 for JS minimization
+ - Stripping unnecessary runtime features
+ - Example build command used:
+   emcc rc4.c -o rc4.js -Oz \
+   -sEXPORTED_FUNCTIONS=_rc4_encrypt,_rc4_decrypt,_free \
+   -sEXPORTED_RUNTIME_METHODS=cwrap
+- Verified that the generated rc4.wasm loads correctly inside the browser.
+- contributed the technical sections of the README:
+ - How to compile C → WASM
+ - How to run the Next.js app
+ - Screenshots
 
 ----------
 PNS2025003
