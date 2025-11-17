@@ -18,8 +18,7 @@ PNS2025002
  - Minimizing WASM size using:
    -Oz for size optimization
    --closure 1 for JS minimization
- - Stripping unnecessary runtime features
- - Example build command used:
+ - Build command used:
    emcc rc4.c -o rc4.js -Oz \
    -sEXPORTED_FUNCTIONS=_rc4_encrypt,_rc4_decrypt,_free \
    -sEXPORTED_RUNTIME_METHODS=cwrap
