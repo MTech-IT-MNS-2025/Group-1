@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diffie-Hellman Key Exchange</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .result h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Diffie-Hellman Key Exchange</h2>
+    
+    <form id="dh-form">
+        <div class="form-group">
+            <label>Enter the Value of p:</label>
+            <input type="number" id="p" required min="2">
+        </div>
+        
+        <div class="form-group">
+            <label>Enter the Value of g:</label>
+            <input type="number" id="g" required min="2">
+        </div>
+        
+        <button type="submit">CONNECT</button>
+    </form>
+
+    <div id="result" class="result" style="display: none;">
+        <h3>Key Exchange Results:</h3>
+        <p><strong>K =</strong> <span id="K-value"></span></p>
+        <p><strong>y =</strong> <span id="y-value"></span></p>
+        <p><strong>a =</strong> <span id="a-value"></span></p>
+    </div>
+
+    <script>
+        let wasmModule;
+        let clientPrivateKey;
+
+        async function loadWasm() {
+            try {
+                const response = await fetch('myProg.wasm');
+                const bytes = await response.arrayBuffer();
+                const module = await WebAssembly.instantiate(bytes);
+                wasmModule = module.instance.exports;
+                console.log('WASM module loaded successfully');
+            } catch (error) {
+                console.error('Failed to load WASM module:', error);
+                alert('WASM module failed to load. Using JavaScript fallback.');
+                wasmModule = {
+                    modExp: function(base, exp, mod) {
+                        let result = 1;
+                        base = base % mod;
+                        while (exp > 0) {
+                            if (exp & 1) result = (result * base) % mod;
+                            exp = exp >> 1;
+                            base = (base * base) % mod;
+                        }
+                        return result;
+                    }
+                };
+            }
+        }
+
+        loadWasm();
+
+        document.getElementById('dh-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const p = parseInt(document.getElementById('p').value);
+            const g = parseInt(document.getElementById('g').value);
+
+            if (p < 2 || g < 2) {
+                alert('Please enter values greater than 1');
+                return;
+            }
+
+            clientPrivateKey = Math.floor(Math.random() * (p - 1)) + 1;
+            const x = wasmModule.modExp(g, clientPrivateKey, p);
+
+            try {
+                const response = await fetch('/compute', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ g, p, x })
+                });
+
+                if (!response.ok) throw new Error(`Server error: ${response.status}`);
+                const serverData = await response.json();
+
+                document.getElementById('K-value').textContent = serverData.K;
+                document.getElementById('y-value').textContent = serverData.y;
+                document.getElementById('a-value').textContent = clientPrivateKey;
+                document.getElementById('result').style.display = 'block';
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to communicate with server. Check console for details.');
+            }
+        });
+    </script>
+</body>
+</html>
