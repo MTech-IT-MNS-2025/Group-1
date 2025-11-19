@@ -1,0 +1,13 @@
+{
+  "name": "lab_test-4",
+  "version": "1.0.0",
+  "description": "Diffie-Hellman Key Exchange Lab Test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build-wasm": "emcc -o public/myProg.wasm myProg.c -O3 -s WASM=1 -s EXPORTED_FUNCTIONS='[\"_modExp\"]' -s SIDE_MODULE=1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
