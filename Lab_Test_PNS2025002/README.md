@@ -2,8 +2,8 @@
 
 ---
 
-Platform used: `Fedora`
-Technologies used: `Emscripten`, `NodeJs`, `Next.js`, `JavaScript`
+- Platform used: `Fedora`
+- Technologies used: `Emscripten`, `NodeJs`, `Next.js`, `JavaScript`
 
 ---
 
