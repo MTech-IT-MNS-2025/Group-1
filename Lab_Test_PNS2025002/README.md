@@ -43,7 +43,7 @@ If you want to avoid executing source ./emsdk_env.sh every time you open a new t
 Emscripten, like gcc and clang, generates unoptimized code by default. Code is optimized by specifying optimization flags when running emcc. The levels include: `-O0` (no optimization), `-O1`, `-O2`, `-Os`, `-Oz`, `-Og`, and `-O3`.
 
 
-### Making rc4.js and rc4.wasm
+### Making myProg.js and myProg.wasm
 
 ```shell
 emcc myProg.c -o myProg.js -Oz --closure 1 -sEXPORTED_FUNCTIONS=_modexp -sEXPORTED_RUNTIME_METHODS=cwrap
