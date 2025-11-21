@@ -11,7 +11,6 @@
 
 ### Install git
 
-# On Fedora
 
 ```shell
 sudo dnf install git
