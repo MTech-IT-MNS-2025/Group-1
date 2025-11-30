@@ -1,0 +1,38 @@
+
+CONTRIBUTIONS
+
+----------
+PNS2025001
+----------
+I contributed to the setup, structure, and configuration of the frontend chat application.  
+My contributions include:
+-_app.js – main app configuration
+-chat.js – chat UI and logic
+-index.js – main landing/login page
+-register.js – user registration page
+-Added socket.js file in pages/api/ directory for creating and handling socket connections.
+
+
+----------
+PNS2025002
+----------
+- Implemented models, lib/mongodb.js, apis for register, login and messages for MongoDB integration.
+- Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
+- Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
+- Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
+
+----------
+PNS2025003
+----------
+- Engineered a custom Node.js server integrated with Next.js and Socket.io, enabling real-time messaging, online/offline user tracking, and network-wide              accessibility for chat clients.
+- Designed and implemented a MongoDB-backed message persistence system using Mongoose, supporting offline message delivery, timestamp-based sorting, and delivery     status tracking.
+- Optimized server performance through modular socket event management and index-based MongoDB queries for efficient message retrieval.
+- Configured CORS policies, environment variable management (.env.local), and dynamic IP detection for secure and flexible deployment across local and LAN networks.
+- Automated offline message synchronization and delivery acknowledgment, ensuring message consistency even during user disconnects.
+- Streamlined the server initialization and error handling process with clean async flow, ensuring reliability and maintainability in production environments.
+- Managed backend environment setup, dependency control, and scripts through package.json to maintain consistent runtime configurations.
+
+
+
+
+
