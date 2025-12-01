@@ -54,10 +54,10 @@ ninja
 Compile C code:
 
 ```shell
-emcc pqc_wrapper.c \
+emcc pqc.c \
   ~/liboqs/build/lib/liboqs.a \
   -I ~/liboqs/build/include/ \
-  -o pqc_wrapper.js \
+  -o pqc.js \
   -Oz \
   -s ALLOW_MEMORY_GROWTH=1 \
   -s MODULARIZE=1 \
