@@ -22,13 +22,13 @@ This assignment implements a real-time, one-to-one private messaging application
 On Ubuntu:
 
 ```shell
-sudo apt install nodejs npm
+sudo apt install nodejs npm cmake ninja-build
 ```
 
 On Fedora:
 
 ```shell
-sudo dnf install nodejs npm
+sudo dnf install nodejs npm cmake ninja-build
 ```
 
 Alternatively node.js can be installed using nvm
@@ -37,6 +37,18 @@ Alternatively node.js can be installed using nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 22
+```
+
+### Configure, build and install liboqs
+
+On Ububtu and Fedora:
+
+```shell
+git clone -b main https://github.com/open-quantum-safe/liboqs.git
+cd liboqs
+mkdir build && cd build
+emcmake cmake -GNinja .. -DOQS_USE_OPENSSL=OFF -DBUILD_SHARED_LIBS=OFF -DOQS_BUILD_ONLY_LIB=ON -DOQS_MINIMAL_BUILD="KEM_ml_kem_768"
+ninja
 ```
 
 ### Install MongoDB
