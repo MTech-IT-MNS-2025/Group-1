@@ -145,11 +145,11 @@ Open frontend in browser
 ## Architecture
 
 ```shell
-chat-app
-│   server.js
+Assignment5
 │
-├───lib
-│       mongodb.js
+│   .env.local
+│   pqc.c
+│   server.js
 │
 ├───models
 │       Message.js
@@ -158,19 +158,26 @@ chat-app
 ├───pages
 │   │   chat.js
 │   │   index.js
-│   │   register.js
-│   │   _app.js
 │   │
 │   └───api
-│           login.js
-│           messages.js
-│           register.js
-│           socket.js
+│       │   messages.js
+│       │   register.js
+│       │
+│       └───users
+│               [username].js
 │
-└───styles
-        Chat.module.css
-        globals.css
-        Login.module.css
+├───public
+│       pqc.js
+│       pqc.wasm
+│
+├───tools
+│       gen_kem_768
+│       gen_kem_768.c
+│
+└───utils
+        mongo.js
+        pqc.js
+        pqcMock.js
 ```
 
 ## Technologies Used
