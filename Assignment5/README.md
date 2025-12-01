@@ -131,7 +131,11 @@ Open frontend in browser
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat.png" alt="Chat" width="90%">
+  <img src="Screenshots/chat1.png" alt="Chat" width="90%">
+</p>
+
+<p align="center">
+  <img src="Screenshots/chat2.png" alt="Chat" width="90%">
 </p>
 
 <p align="center">
