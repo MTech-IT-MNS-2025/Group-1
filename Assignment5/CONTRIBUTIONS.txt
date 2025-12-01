@@ -4,6 +4,10 @@ CONTRIBUTIONS
 ----------
 PNS2025001
 ----------
+- I have contributed the entire `pages/` folder for this project.  
+- This includes all frontend and backend page components such as `index.js`, `chat.js`, and the complete `api/` directory.  
+- The `api/` directory contains the routes for user registration, message handling, and the `users/` subfolder.  
+- These files together form the main structure for routing, API communication, and page rendering in the application.
 
 
 
