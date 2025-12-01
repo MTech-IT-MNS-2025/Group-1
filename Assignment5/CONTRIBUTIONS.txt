@@ -11,10 +11,17 @@ PNS2025001
 ----------
 PNS2025002
 ----------
-- Implemented models, lib/mongodb.js, apis for register, login and messages for MongoDB integration.
-- Contributed extensively to 'README.md', providing setup instructions, technology breakdown, and usage documentation.
-- Added the 'Screenshots' folder with images of the chat interface and MongoDB Compass test result.
-- Assisted in final testing of database operations and verified message storage/retrieval in MongoDB Compass.
+- Cloned the liboqs repository using the main branch.
+- Configured the build environment with specific flags to disable OpenSSL, build static libraries only, and perform a minimal build focusing on a particular KEM algorithm (KEM_ml_kem_768).
+- Used the emcmake wrapper to prepare the build environment, then compiled with ninja to generate the necessary libraries.
+- Wrote a C code file (pqc.c) to interface with the liboqs library.
+- Used emcc (Emscripten) to compile the C code along with the statically linked liboqs library.
+- Applied various optimizations (-Oz) and configured the environment for WebAssembly (-s ENVIRONMENT=web), making the library available for web environments.
+- Enabled memory growth and modularization, and exported specific functions (_malloc, _free, _pqc_keypair, _pqc_encaps, _pqc_decaps) for use in the generated WebAssembly module.
+- Developed Keypair Generation Tool:
+- Wrote gen_kem_768.c, a C program to generate an ML-KEM-768 keypair using the liboqs library.
+- The program generates both the public and secret keys in raw binary format, which are saved to files (<username>_pk.raw, <username>_sk.raw).
+- Included detailed instructions for compiling, running, and converting the raw key files to base64 encoded files for easier transmission and storage.
 
 ----------
 PNS2025003
