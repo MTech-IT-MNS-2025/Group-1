@@ -54,29 +54,17 @@ ninja
 Compile C code:
 
 ```shell
-emcc pqc.c \
+emcc pqc_wrapper.c \
   ~/liboqs/build/lib/liboqs.a \
   -I ~/liboqs/build/include/ \
-  -o pqc.js \
+  -o pqc_wrapper.js \
   -Oz \
   -s ALLOW_MEMORY_GROWTH=1 \
   -s MODULARIZE=1 \
-  -s EXPORT_NAME="createPQCModule" \
-  -s EXPORTED_FUNCTIONS="['_malloc', '_free']" \
+  -s EXPORT_NAME="createPqcModule" \
+  -s EXPORTED_FUNCTIONS="['_malloc', '_free', '_pqc_keypair', '_pqc_encaps', '_pqc_decaps']" \
   -s NO_EXIT_RUNTIME=1 \
-  -s ENVIRONMENT=web,node
-```
-
-Set library path:
-
-On Ubuntu:
-```shell
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-```
-
-On Fedora:
-```shell
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
+  -s ENVIRONMENT=web
 ```
 
 ### Install MongoDB
