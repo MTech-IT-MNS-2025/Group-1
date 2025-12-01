@@ -4,7 +4,7 @@
 
 ## Overview
 
-This assignment implements a real-time, one-to-one private messaging application using **Next.js** for the frontend and **Socket.io** for real-time communication. The application allows users to send and receive messages securely using **liboqs**. It also stores chat history in a **MongoDB** database to ensure messages are available even when users are offline or reconnect.
+This assignment implements a real-time, one-to-one private messaging application using **Next.js** for the frontend and **Socket.io** for real-time communication. The application allows users to send and receive messages securely using **liboqs** and AES. It also stores chat history in a **MongoDB** database to ensure messages are available even when users are offline or reconnect.
 
 ### Key Features
 - **User Authentication**: Users enter a username to connect and gain access to the chat system.
@@ -194,7 +194,7 @@ chat-app
 - **Database**:
   - **MongoDB**: Database used to persist messages and user data.
 - **Security**:
-  - **liboqs**: Implementations of quantum-safe KEMs and SIGs
+  - **liboqs**: Implementations of quantum-safe KEM.
 - **Styling**:
   - **CSS Modules** or **Tailwind CSS** for designing the user interface.
 
