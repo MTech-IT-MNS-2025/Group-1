@@ -1,0 +1,9 @@
+{
+  "/": "pages/index.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/api/messages": "pages/api/messages.js",
+  "/api/register": "pages/api/register.js",
+  "/api/users/[username]": "pages/api/users/[username].js",
+  "/chat": "pages/chat.js"
+}

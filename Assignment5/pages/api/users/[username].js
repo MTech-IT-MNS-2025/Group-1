@@ -1,23 +1,21 @@
-// pages/api/messages.js
-import connectDB from "../../utils/mongo";
-import Message from "../../models/Message";
+// pages/api/users/[username].js
+import dbConnect from "../../../utils/mongo";
+import User from "../../../models/User";
 
 export default async function handler(req, res) {
-  await connectDB();
+  await dbConnect();
 
-  const { user1, user2 } = req.query;
+  const { username } = req.query;
 
-  if (!user1 || !user2) {
-    return res.status(400).json({ error: "Missing users" });
+  const user = await User.findOne({ username }).lean();
+
+  if (!user) {
+    return res.status(404).json({ error: "User not found" });
   }
 
-  const messages = await Message.find({
-    $or: [
-      { sender: user1, receiver: user2 },
-      { sender: user2, receiver: user1 }
-    ]
-  }).sort({ timestamp: 1 });
-
-  res.json(messages);
+  return res.json({
+    username: user.username,
+    pqPublicKey: user.pqPublicKey || ""
+  });
 }
 
