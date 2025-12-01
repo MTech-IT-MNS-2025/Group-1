@@ -67,6 +67,18 @@ emcc pqc.c \
   -s ENVIRONMENT=web,node
 ```
 
+Set library path:
+
+On Ubuntu:
+```shell
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+```
+
+On Fedora:
+```shell
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
+```
+
 ### Install MongoDB
 
 On Ububtu:
