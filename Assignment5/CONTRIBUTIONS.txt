@@ -9,9 +9,6 @@ PNS2025001
 - The `api/` directory contains the routes for user registration, message handling, and the `users/` subfolder.  
 - These files together form the main structure for routing, API communication, and page rendering in the application.
 
-
-
-
 ----------
 PNS2025002
 ----------
