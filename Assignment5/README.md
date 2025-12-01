@@ -51,6 +51,22 @@ emcmake cmake -GNinja .. -DOQS_USE_OPENSSL=OFF -DBUILD_SHARED_LIBS=OFF -DOQS_BUI
 ninja
 ```
 
+Compile C code:
+
+```shell
+emcc pqc.c \
+  /home/om/Documents/"IC LAB"/ASS02/liboqs/build/lib/liboqs.a \
+  -I /home/om/Documents/"IC LAB"/ASS02/liboqs/build/include/ \
+  -o pqc.js \
+  -Oz \
+  -s ALLOW_MEMORY_GROWTH=1 \
+  -s MODULARIZE=1 \
+  -s EXPORT_NAME="createPQCModule" \
+  -s EXPORTED_FUNCTIONS="['_malloc', '_free']" \
+  -s NO_EXIT_RUNTIME=1 \
+  -s ENVIRONMENT=web,node
+```
+
 ### Install MongoDB
 
 On Ububtu:
