@@ -117,6 +117,20 @@ https://www.mongodb.com/try/download/compass
 git clone https://github.com/MTech-IT-MNS-2025/Group-1.git
 ```
 
+Compile gen_kem_768.c and Generate ML-KEM-768 keypair using liboqs
+```shell
+gcc gen_kem_768.c -o gen_kem_768 -I /home/suraj/Desktop/liboqs/build/include \
+   -L /home/suraj/Desktop/liboqs/build/lib -loqs
+```
+
+Convert Keypairs to base64
+```shell
+base64 alice_pk.raw > alice_pk.b64
+base64 alice_sk.raw > alice_sk.b64
+base64 bob_pk.raw > bob_pk.b64
+base64 bob_sk.raw > bob_sk.b64
+```
+
 in Assignment folder
 
 ```shell
