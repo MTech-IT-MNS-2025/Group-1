@@ -4,13 +4,7 @@ CONTRIBUTIONS
 ----------
 PNS2025001
 ----------
-I contributed to the setup, structure, and configuration of the frontend chat application.  
-My contributions include:
--_app.js – main app configuration
--chat.js – chat UI and logic
--index.js – main landing/login page
--register.js – user registration page
--Added socket.js file in pages/api/ directory for creating and handling socket connections.
+
 
 
 ----------
