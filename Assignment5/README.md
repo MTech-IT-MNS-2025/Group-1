@@ -135,10 +135,6 @@ Open frontend in browser
 </p>
 
 <p align="center">
-  <img src="Screenshots/chat2.png" alt="Chat" width="90%">
-</p>
-
-<p align="center">
   <img src="Screenshots/db_messages.png" alt="db_messages" width="90%">
 </p>
 
