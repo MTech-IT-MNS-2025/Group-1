@@ -55,8 +55,8 @@ Compile C code:
 
 ```shell
 emcc pqc.c \
-  /home/om/Documents/"IC LAB"/ASS02/liboqs/build/lib/liboqs.a \
-  -I /home/om/Documents/"IC LAB"/ASS02/liboqs/build/include/ \
+  ~/liboqs/build/lib/liboqs.a \
+  -I ~/liboqs/build/include/ \
   -o pqc.js \
   -Oz \
   -s ALLOW_MEMORY_GROWTH=1 \
