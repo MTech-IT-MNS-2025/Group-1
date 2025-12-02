@@ -217,4 +217,4 @@ Assignment5
 
 ## Contributions
 
-Contribution details of each member is listed in `CONTRIBUTIONS.txt`
+Contribution details of each member is listed in `CONTRIBUTIONS.txt`.
